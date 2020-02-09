@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load blog_tags %}
+{% load static from staticfiles %}
+<html>
+<title>No tan Secreto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Rakkas&display=swap" rel="stylesheet">
+<style>
+ 
+
+
+header {
+  position: relative;
+  background: url(https://elenacube.s3-eu-west-1.amazonaws.com/media/background.png) no-repeat;
+  background-size: 100% 100%;
+  height: 90%;
+
+
+}
+a { text-decoration: none; }
+
+body,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+h1 {font-family: 'Rakkas', cursive;}
+
+</style>
+
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+
+<!-- Blog entries -->
+{% block content %}
+    {% endblock %}
+<!-- Introduction menu -->
+
+<!-- END Introduction Menu -->
+
+</body>
+</html>
