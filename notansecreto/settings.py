@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'hkk+9go9x#_o=a!kpartar+#a4m(fi2o*chp+*=%8jx^znxivt'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,10 +128,10 @@ USE_TZ = True
 
 
 S3UTILS_DEBUG_LEVEL=1
-AWS_STORAGE_BUCKET_NAME = 'elenacube'
+AWS_STORAGE_BUCKET_NAME = ''
 AWS_S3_REGION_NAME = 'eu-west-1'  # e.g. us-east-2
-AWS_ACCESS_KEY_ID = 'AKIARWQQDNWEFPAPJUQU'
-AWS_SECRET_ACCESS_KEY = 'HnZeIpIIaTSqsieTAIbMW2o0CcuqEszgihkrXuuB'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 
 # Tell django-storages the domain to use to refer to static files.
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
